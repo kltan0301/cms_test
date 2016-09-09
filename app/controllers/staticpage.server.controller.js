@@ -22,8 +22,6 @@ module.exports = {
     var newPage = new Page(req.body);
     console.log(req.body);
 
-    app.locals.urls = [newPage];
-
     newPage.save(function(err){
       if(err) return next(err);
 
